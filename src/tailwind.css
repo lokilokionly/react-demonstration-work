@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@font-face {
+    font-family: Gentium Book Plus;
+    src: url(./assets/fonts/GentiumBookPlus-Bold.ttf);
+}
+
+.helloPage {
+    height: 100vh - 24px;
+}
+
+.NavCategori li{
+    visibility: hidden;
+}

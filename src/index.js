@@ -1,12 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './tailwind.css'
-import Layout from './Components/Layout/Layout';
+
 import Router from './Router/Router';
 // import './firebase.js'
+
+import 'tw-elements';
+
 import {BrowserRouter} from "react-router-dom";
 
-
+import './tailwind.css';
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>

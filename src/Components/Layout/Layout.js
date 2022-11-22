@@ -1,12 +1,14 @@
 import { Outlet } from "react-router";
+import HeaderComp from '../HeaderComp'
+import FooterComp from '../FooterComp'
 export default function Layout () {
     return(
         <main>
-            <header>ХЕАДЕР ЕПИА</header>
+            <header className=" pt-12"><HeaderComp/></header>
 
             <div><Outlet/></div>
             
-            <footer>ФУТЕР ЕБПА</footer>
+            <footer><FooterComp/></footer>
         </main>
     )
 }
