@@ -5,69 +5,27 @@ import LogoH from '../assets/img/Logo/logo.svg'
 
 export default function HeaderComp() {
 
-    var Prise = 5;
 
     return (
         <div>
-            <div className="container mx-auto flex justify-center px-12 h-16 ">
-                <div className="NavCategori flex my-5">
-                    <ul className=" px-8">
-                        <button>Катерогии</button>
-                        <li>
-                            Гарнитура
-                        </li>
-                        <li>
-                            Наушники
-                        </li>
-                        <li>
-                            Жопа
-                        </li>
-                    </ul>
-                    <ul className=" px-8">
-                        <button>Катерогии</button>
-                        <li>
-                            Гарнитура
-                        </li>
-                        <li>
-                            Наушники
-                        </li>
-                        <li>
-                            Жопа
-                        </li>
-                    </ul>
-                    <ul className=" px-8">
-                        <button>Катерогии</button>
-                        <li>
-                            Гарнитура
-                        </li>
-                        <li>
-                            Наушники
-                        </li>
-                        <li>
-                            Жопа
-                        </li>
-                    </ul>
-                </div>
+            <div className="container mx-auto flex justify-between px-12">
 
-                <div className="flex my-5">
+                <Link to={<AuthPage/>} className=" my-auto  font-bold text-lg uppercase">Войти</Link>
+
+                
+
+                <div className=" my-auto flex mx-auto">
+                    <Link className="flex my-5">
                         <img className=' w-10 h-10' src={LogoH} alt="" />
                         <h1 className=" uppercase my-auto pl-5 font-bold text-2xl text-black">the loopa</h1>
-                    </div>
-
-                <div className=" my-auto">
-                    <Link className=" px-3">Оплата</Link>
-                    <Link className=" px-3">Доставка</Link>
+                    </Link>
+                    <Link className="flex pb-1">
+                        <img className="px-3 my-auto z-10" src={CartH} alt="" />
+                        <img className=" my-auto relative right-4 bottom-1 w-8 rotate-[-20deg]" src={PriseH} alt="" />
+                    </Link>
                 </div>
 
-                <div className=" my-auto">
-                    <div className="flex">
-                        <img className="px-3 my-auto" src={CartH} alt="" />
-
-                        <p className=" my-auto font-semibold z-0 bg-slate-300 text-lg rounded-full px-2 mx-3">{Prise}</p>
-                        <img className=" z-10 my-auto w-" src={PriseH} alt="" />
-
-                    </div>
-                </div>
+                <Link className=" my-auto  font-bold text-lg uppercase">Магазин</Link>
             </div>
         </div>
     )
