@@ -4,6 +4,7 @@ import HelloPage from '../View/HelloPage/HelloPage.js'
 
 import AuthPage from '../View/AuthPage/AuthPage'
 import CrashPage from '../View/CrashPage/CrashPage'
+import StorePage from '../View/StorePage/StorePage'
 
 export default function Router() {
     return (
@@ -13,6 +14,8 @@ export default function Router() {
                     <Route path='*' element={<CrashPage/>}></Route>
 
                 <Route path='/auth' element={<AuthPage/>}></Route>
+
+                <Route path='/storepage' element={<StorePage/>}></Route>
 
             </Route>
         </Routes>

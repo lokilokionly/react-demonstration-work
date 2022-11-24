@@ -3,6 +3,7 @@ import CartH from '../assets/img/Header/cart.svg'
 import PriseH from '../assets/img/Header/prise.svg'
 import LogoH from '../assets/img/Logo/logo.svg'
 
+
 export default function HeaderComp() {
 
 
@@ -10,12 +11,10 @@ export default function HeaderComp() {
         <div>
             <div className="container mx-auto flex justify-between px-12">
 
-                <Link to={<AuthPage/>} className=" my-auto  font-bold text-lg uppercase">Войти</Link>
-
-                
+                <Link to={'/auth'} className=" my-auto  font-bold text-lg uppercase">Войти</Link>
 
                 <div className=" my-auto flex mx-auto">
-                    <Link className="flex my-5">
+                    <Link to={"/"} className="flex my-5">
                         <img className=' w-10 h-10' src={LogoH} alt="" />
                         <h1 className=" uppercase my-auto pl-5 font-bold text-2xl text-black">the loopa</h1>
                     </Link>
@@ -25,7 +24,7 @@ export default function HeaderComp() {
                     </Link>
                 </div>
 
-                <Link className=" my-auto  font-bold text-lg uppercase">Магазин</Link>
+                <Link to={'/storepage'} className=" my-auto  font-bold text-lg uppercase">Магазин</Link>
             </div>
         </div>
     )
