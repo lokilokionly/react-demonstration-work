@@ -1,30 +1,34 @@
 import { Link } from "react-router-dom"
-import CartH from '../assets/img/Header/cart.svg'
-import PriseH from '../assets/img/Header/prise.svg'
 import LogoH from '../assets/img/Logo/logo.svg'
-
 
 export default function HeaderComp() {
 
 
     return (
-        <div>
-            <div className="container mx-auto flex justify-between px-12">
+        <div className=" container mx-auto py-5">
+            <div className=" flex justify-between">
+                <Link to={"/"} className="flex">
+                    <img className=' w-10 h-10' src={LogoH} alt="" />
+                    <h1 className=" uppercase my-auto pl-5 font-bold text-2xl text-black">the <br /> alpaca</h1>
+                </Link>
 
-                <Link to={'/auth'} className=" my-auto  font-bold text-lg uppercase">Войти</Link>
+                <div className=" my-auto">
+                    <Link to={'/auth'}>
+                        <button type="button" class="inline-block px-6 py-2.5 bg-transparent text-black font-medium text-xl leading-tight uppercase rounded hover:bg-gray-100 focus:text-slate-500 focus:bg-gray-100 focus:outline-none focus:ring-0 active:bg-gray-200 active:text-slate-600 transition duration-300 ease-in-out">
+                            Войти</button>
+                    </Link>
 
-                <div className=" my-auto flex mx-auto">
-                    <Link to={"/"} className="flex my-5">
-                        <img className=' w-10 h-10' src={LogoH} alt="" />
-                        <h1 className=" uppercase my-auto pl-5 font-bold text-2xl text-black">the loopa</h1>
+                    <Link to={'/storepage'} >
+                        <button type="button" class="inline-block px-6 py-2.5 bg-transparent text-black font-medium text-xl leading-tight uppercase rounded hover:bg-gray-100 focus:text-slate-500 focus:bg-gray-100 focus:outline-none focus:ring-0 active:bg-gray-200 active:text-slate-600 transition duration-300 ease-in-out">
+                            Магазин</button>
                     </Link>
-                    <Link className="flex pb-1">
-                        <img className="px-3 my-auto z-10" src={CartH} alt="" />
-                        <img className=" my-auto relative right-4 bottom-1 w-8 rotate-[-20deg]" src={PriseH} alt="" />
+
+                    <Link to={'/routespage'} >
+                        <button type="button" class="inline-block px-6 py-2.5 bg-transparent text-black font-medium text-xl leading-tight uppercase rounded hover:bg-gray-100 focus:text-slate-500 focus:bg-gray-100 focus:outline-none focus:ring-0 active:bg-gray-200 active:text-slate-600 transition duration-300 ease-in-out">
+                            Маршруты</button>
                     </Link>
+
                 </div>
-
-                <Link to={'/storepage'} className=" my-auto  font-bold text-lg uppercase">Магазин</Link>
             </div>
         </div>
     )

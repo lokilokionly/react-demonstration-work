@@ -4,7 +4,7 @@
 
 
 @font-face {
-    font-family: Gentium Book Plus;
+    font-family: GentiumBookPlus;
     src: url(./assets/fonts/GentiumBookPlus-Bold.ttf);
 }
 
@@ -15,3 +15,13 @@
 .NavCategori li{
     visibility: hidden;
 }
+
+.AlpacaBG {
+   
+    height: 900px;
+    max-width: 1440px;
+}
+
+/* .MainFont {
+    font-family: GentiumBookPlus;
+} */

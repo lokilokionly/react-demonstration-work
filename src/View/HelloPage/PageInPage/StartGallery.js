@@ -1,4 +1,4 @@
-import Huawei from '../../../assets/img/Logo/Huawei.png'
+
 import HuaweiTelephone from '../../../assets/img/ProductsLocal/HuaweiTelephone.webp'
 export default function StartGallery() {
     return (

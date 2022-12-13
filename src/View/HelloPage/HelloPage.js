@@ -1,20 +1,17 @@
-import StartGallery from "./PageInPage/StartGallery"
-import FreeShipping from "./PageInPage/freeshipping"
-import Specialists from "./PageInPage/specialists"
-import PopularModel from "./PageInPage/PopularModel"
-import NewModel from "./PageInPage/NewModel"
-import ButtonModels from "./PageInPage/ButtonModels"
-import PresentFoU from "./PageInPage/PresentFoU"
+
+import StartGalery from "./PageInPage/StartGalery"
+import StartGaleryPage from "../StartGaleryPage/StartGaleryPage"
+import FlexBoxStart from "./PageInPage/StartFlexBox"
+import SponsorPage from "./PageInPage/SponsorPage"
 export default function HelloPage () {
     return(
-        <div className=''>
-            <StartGallery/>
-            <FreeShipping/>
-            <Specialists/>
-            <PopularModel/>
-            <NewModel/>
-            <ButtonModels/>
-            <PresentFoU/>
+        <div className=' w-full bg-gray-200'>
+
+            <StartGaleryPage/>
+            
+            <SponsorPage/>
+            <FlexBoxStart/>
+            
         </div>
     )
 }
