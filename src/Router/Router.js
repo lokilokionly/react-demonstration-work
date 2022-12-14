@@ -6,6 +6,7 @@ import AuthPage from '../View/AuthPage/AuthPage'
 import CrashPage from '../View/CrashPage/CrashPage'
 import StorePage from '../View/StorePage/StorePage'
 import RoutesPage from '../View/RoutesPage/RoutesPage'
+import RoutePage from '../View/RoutePage/RoutePage'
 export default function Router() {
     return (
         <Routes>
@@ -19,7 +20,7 @@ export default function Router() {
 
                 <Route path='/routespage' element={<RoutesPage/>}></Route>
 
-                <Route path='/'></Route>
+                <Route path='/routepage/:id' element={<RoutePage/>}></Route>
 
             </Route>
         </Routes>

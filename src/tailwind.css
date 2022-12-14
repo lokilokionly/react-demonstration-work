@@ -25,3 +25,10 @@
 /* .MainFont {
     font-family: GentiumBookPlus;
 } */
+
+.RoutesButton:hover div {
+    filter: brightness(0.55);
+}
+.RoutesButton:hover .qwe{
+    visibility: visible;
+}

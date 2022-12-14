@@ -3,7 +3,7 @@ export default function AuthPage () {
         <div className=" container">
             <h1 className=" text-center">Вход</h1>
             <div>
-
+                
             </div>
         </div>
     )

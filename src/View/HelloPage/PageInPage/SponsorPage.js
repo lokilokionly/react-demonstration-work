@@ -11,18 +11,18 @@ export default function SponsorPage() {
                 </div>
                 <div className=' mx-auto'>
                 <div className=" grid grid-cols-4 gap-12">
-                    <div>
-                        <img className=' transition  w-[240px] opacity-40 brightness-0 hover:opacity-100 hover:brightness-100' src={Kazax} alt="" />
+                    <div className=''>
+                        <img className='relative my-auto transition  w-[240px] opacity-40 brightness-0 hover:opacity-100 hover:brightness-100 top-8' src={Kazax} alt="" />
                     </div>
                     <div>
-                        <img className=' transition  w-[240px] opacity-40 brightness-0 hover:opacity-100 hover:brightness-100' src={Turizm} alt="" />
+                        <img className='relative my-auto transition  w-[240px] opacity-40 brightness-0 hover:opacity-100 hover:brightness-100' src={Turizm} alt="" />
                         
                     </div>
                     <div>
-                        <img className=' transition  w-[240px] opacity-40 brightness-0 hover:opacity-100 hover:brightness-100' src={Kazaktelecom} alt="" />
+                        <img className='relative my-auto transition  w-[240px] opacity-40 brightness-0 hover:opacity-100 hover:brightness-100' src={Kazaktelecom} alt="" />
                     </div>
                     <div>
-                    <img className=' transition  w-[240px] opacity-40 brightness-0 hover:opacity-100 hover:brightness-100' src={Unnamed} alt="" />
+                    <img className='relative my-auto transition  w-[240px] opacity-40 brightness-0 hover:opacity-100 hover:brightness-100 bottom-8' src={Unnamed} alt="" />
                     </div>
                 </div>
                 </div>
