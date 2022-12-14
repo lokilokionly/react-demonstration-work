@@ -17,34 +17,30 @@ export default function RoutePage(props) {
   const [time, setTime] = useState('')
 
   return (
-    <div className="bg-gray-200">
-      <div className=" ">
-        <div className="container  flex">
-          <img className="w-[500px] rounded-3xl ml-auto" src={location.state.image} alt="" />
-          <div className="">
-            <div className="w-[650px]">
-              <div className=" flex justify-between px-6">        
-              {/* <h1 className="text-3xl ">{location.state.title}</h1>
-              <p className="text-3xl ">{location.state.price}</p> */}
-              </div>
-              <h1 className=" text-xl mx-auto text-left  mb-12 rounded-2xl shadow-sm px-4 py-2 border border-black">{location.state.descripcion}</h1>
-            </div>
-            
+    <div>
+      <div className="flex mx-24 my-5">
+        <div className=" w-1/3">
+          <img className="w-[500px] rounded-3xl ml-auto m-2" src={location.state.image} alt="" />
+          <div className="rounded-3xl mt-8">
+            <h1 className="text-3xl text-center p-8 border m-4 rounded-3xl  ">Маршрут: {location.state.title}</h1>
+
+            <p className="text-3xl text-center p-8 border m-4 rounded-3xl">Цена Маршрута: {location.state.price} ₸</p>
           </div>
         </div>
+        <div className=" pl-12 w-2/3 pt-2">
+        <h1 className=" text-xl mx-auto text-left  mb-12 rounded-2xl shadow-sm px-4 py-2 border border-black">{location.state.descripcion}</h1>
+        
+          <div className=" container">
+            <input className=" px-4 py-2 m-2 rounded-l-full rounded-r-full mx-6 border" type="text" placeholder="Ваше имя" />
+            <input className=" px-4 py-2 m-2 rounded-l-full rounded-r-full mx-6 border" type="text" placeholder="Номер телефона" />
+            <input className=" px-4 py-2 m-2 rounded-l-full rounded-r-full mx-6 border" type="text" placeholder="Ваша почта" />
+          </div>
+          <div>
 
-        <div className=" border-2 my-12 mx-24 container">
-          <div>
-            Время проживания в отеле (в сутках) :
-          </div>
-          <div>
-            Способ Оплаты:
-          </div>
+          <input className=" px-4 py-2 m-2 rounded-l-full rounded-r-full mx-6 border" type="text" placeholder="Ваша почта" />
 
-          <div>
-            Количество Экскурсий :
+
           </div>
-          Итоговая сумма: {qwe}
         </div>
       </div>
     </div>

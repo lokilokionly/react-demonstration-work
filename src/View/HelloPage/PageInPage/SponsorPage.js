@@ -4,7 +4,7 @@ import Kazaktelecom from '../../../assets/img/Sponsors/kazaktelecom.webp'
 import Unnamed from '../../../assets/img/Sponsors/unnamed.webp' 
 export default function SponsorPage() {
     return (
-        <div className=" container mx-auto my-12">
+        <div className=" container mx-auto py-12">
             <div className='flex'>
                 <div className=" my-auto mx-auto w-max">
                     <h1 className=' text-3xl'>Наши спонсоры:</h1>

@@ -35,26 +35,25 @@ export default function RoutesPage() {
 
 
 
-                        <div key={i.id} className=' w-[92%] hover:brightness-[0.8] hover:scale-105 transition rounded-3xl shadow-xl'>
-                            <img src={i.img} alt="" className='z-20 w-[450px] h-[400px] mx-auto rounded-t-3xl' />
-                            <div className=' flex justify-between px-6 h-16'>
-                                <h1 className='top-12 my-auto text-2xl'>{i.title}</h1>
-                                <div>
-                                    <p className=' my-auto text-xl '>{i.prise} ₸</p>
-                                    <Link
-                                        state={{
-                                            id: i.id,
-                                            title: i.title,
-                                            image: i.img,
-                                            price: i.prise,
-                                            descripcion: i.descripcion,
-                                        }}
-                                        className='my-auto rounded-l-3xl border-2-l text-xl'
-                                        to={`/routepage/${i.id}`}>
-                                        Перейти
-                                    </Link>
+                        <div key={i.id} className=' w-[92%] hover:brightness-[0.8] hover:scale-105 transition rounded-3xl shadow-xl py-12'>
+                            <Link
+                                state={{
+                                    id: i.id,
+                                    title: i.title,
+                                    image: i.img,
+                                    price: i.prise,
+                                    descripcion: i.descripcion,
+                                }}
+                                className='my-auto rounded-l-3xl border-2-l text-xl'
+                                to={`/routepage/${i.id}`}>
+                                <img src={i.img} alt="" className='z-20 w-[450px] h-[400px] mx-auto rounded-t-3xl' />
+                                <div className=' flex justify-between px-6 h-16'>
+                                    <h1 className='top-12 my-auto text-2xl'>{i.title}</h1>
+                                    <div className=' my-auto'>
+                                        <p className=' my-auto text-xl '>{i.prise} ₸</p>
+                                    </div>
                                 </div>
-                            </div>
+                            </Link>
                         </div>
                     )
                 })}
