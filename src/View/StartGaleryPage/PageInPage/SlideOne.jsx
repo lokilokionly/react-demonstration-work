@@ -7,7 +7,7 @@ export default function SlideOne () {
               {/* начало блока */}
               <img className=' my-auto w-[300px]' src={LogoH} alt="" />
               <div className=' my-auto pl-12'>
-                <h1 className=' text-3xl uppercase font-extrabold'>The Alpaca <span className=' font-medium'> - туристический сервис <br /> с возможностью аренды парнокопытных животных</span></h1>
+                <h1 className=' text-3xl uppercase font-extrabold'>The Alpaca <span className=' font-medium'> - туристический сервис <br /> по горной системе Тянь-Шань</span></h1>
 
               </div>
             </div>

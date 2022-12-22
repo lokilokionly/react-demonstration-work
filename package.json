@@ -10,9 +10,12 @@
     "firebaseui": "^6.0.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-imask": "^6.4.3",
+    "react-loads": "^9.2.6",
     "react-router": "^6.4.3",
     "react-router-dom": "^6.4.3",
     "react-scripts": "5.0.1",
+    "reactjs-popup": "^2.0.5",
     "tw-elements": "^1.0.0-alpha12",
     "web-vitals": "^2.1.4"
   },

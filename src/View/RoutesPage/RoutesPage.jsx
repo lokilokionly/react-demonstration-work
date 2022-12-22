@@ -28,14 +28,11 @@ export default function RoutesPage() {
         )
     }, [])
     return (
-        <div>
-            <div className=' grid grid-cols-3 container mx-auto py-8'>
+        <div className=' bg-gray-200'>
+            <div className=' grid grid-cols-3 container mx-auto gap-8 py-8'>
                 {data.map((i) => {
                     return (
-
-
-
-                        <div key={i.id} className=' w-[92%] hover:brightness-[0.8] hover:scale-105 transition rounded-3xl shadow-xl py-12'>
+                        <div key={i.id} className='rounded-3xl '>
                             <Link
                                 state={{
                                     id: i.id,
@@ -43,16 +40,13 @@ export default function RoutesPage() {
                                     image: i.img,
                                     price: i.prise,
                                     descripcion: i.descripcion,
+                                    priceofstay: i.priceofstay,
                                 }}
-                                className='my-auto rounded-l-3xl border-2-l text-xl'
-                                to={`/routepage/${i.id}`}>
-                                <img src={i.img} alt="" className='z-20 w-[450px] h-[400px] mx-auto rounded-t-3xl' />
-                                <div className=' flex justify-between px-6 h-16'>
-                                    <h1 className='top-12 my-auto text-2xl'>{i.title}</h1>
-                                    <div className=' my-auto'>
-                                        <p className=' my-auto text-xl '>{i.prise} ₸</p>
-                                    </div>
-                                </div>
+                                to={`/routepage/${i.urlPage}`}>
+                                    <figure className='brightness-100 hover:scale-[110%] transition ease-in-out delay-[100ms] duration-[100ms]'>
+                                        <img className='w-[450px] h-[400px] mx-auto rounded-3xl' src={i.img} alt="" />
+                                        <figcaption className=' text-[#000000] text-center relative bottom-[-5px] text-3xl uppercase font-semibold'>{i.title}</figcaption>
+                                    </figure>
                             </Link>
                         </div>
                     )

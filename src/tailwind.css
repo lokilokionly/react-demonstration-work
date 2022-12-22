@@ -10,6 +10,7 @@
 
 .helloPage {
     height: 100vh - 24px;
+    
 }
 
 .NavCategori li{
@@ -22,13 +23,10 @@
     max-width: 1440px;
 }
 
-/* .MainFont {
-    font-family: GentiumBookPlus;
-} */
-
-.RoutesButton:hover div {
-    filter: brightness(0.55);
+.QWEXOXOL IMaskInput {
+    background: #fff;
 }
-.RoutesButton:hover .qwe{
-    visibility: visible;
+
+.MainRoutes:hover figcaption{
+     color: #fff;
 }
